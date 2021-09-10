@@ -40,12 +40,6 @@ jobs:
         run: |
           yarn install
 
-      # Install packages
-      - name: Install packages
-        run: |
-          cd react-application-folder/
-          yarn install
-
       # Build an optimized production build
       - name: Production build
         run: |
