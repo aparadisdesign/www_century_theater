@@ -6,7 +6,7 @@ import {Container, Nav, Navbar} from "react-bootstrap";
 const MainNavigation = () => {
     // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
     return (
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" className="mainNav">
                 <Container>
                     <Navbar.Brand href="#home">The Century Theater</Navbar.Brand>
                     <Nav className="justify-content-end">
