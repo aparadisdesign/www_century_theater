@@ -1,15 +1,15 @@
 import MainNavigation from "./components/MainNavigation/MainNavigation";
-import './bootstrap/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer";
 import './App.css';
 import background from "./components/FirstFold/img/background-img.png";
+import FirstFold from "./components/FirstFold/FirstFold";
 
 function App() {
   return (
     <div className="topLevelDiv">
         <MainNavigation />
-        <div className="mainContainer" style={{ backgroundImage: `url(${background})`, minHeight:`100vh`, marginBottom: `60px`, }}>
-            TEST
+        <div className="mainContainer" style={{ backgroundColor: `rgba(25, 25, 25, .7)`, backgroundImage: `url(${background})`, backgroundPosition:`center center`, backgroundSize: `cover`, backgroundBlendMode: `overlay`, minHeight:`100vh`, marginBottom: `60px`, }}>
+            <FirstFold />
         </div>
         <Footer />
     </div>
