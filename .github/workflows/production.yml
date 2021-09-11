@@ -44,8 +44,8 @@ jobs:
       - name: Production Build
         run: |
           unset CI
-          yarn build
           npx browserslist@latest --update-db
+          yarn build
 
       # Deploy to the S3 server
       - name: Deploy to S3
