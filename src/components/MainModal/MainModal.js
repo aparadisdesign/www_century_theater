@@ -1,36 +1,28 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Button, Modal} from "react-bootstrap";
 import ReactHtmlParser from 'react-html-parser';
 
-const MainModal = () => {
 
-    let modal_data = {
-        title: "Under Development",
-        body: "<h4>We just started building this thing!</h4><p>For now the best place to find showtime and information about the century theater is on our Facebook page. <a href=\"https://www.facebook.com/TheCenturyTheater\">Click Here To Visit Us On Facebook</a></p><p>The best way to contact us is by Facebook Messenger.</p>",
-    }
+const MainModal = (props) => {
 
-    const [show, setShow] = useState(true);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
         <>
             <Modal
-                show={show}
-                onHide={handleClose}
+                show={props.show}
+                onHide={props.handleClose}
                 backdrop="static"
                 keyboard={false}
                 centered
             >
                 <Modal.Header>
-                    <Modal.Title>{modal_data.title}</Modal.Title>
+                    <Modal.Title>{props.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    { ReactHtmlParser (modal_data.body) }
+                    { ReactHtmlParser (props.body) }
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" onClick={props.handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>

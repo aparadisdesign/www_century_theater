@@ -1,5 +1,5 @@
 import React, {} from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import NowPlaying from "./NowPlaying";
 
 const firstLetterStyles = {
@@ -17,7 +17,7 @@ const headerStyle = {
     fontStyle: `normal`
 }
 
-const SecondFold = () => {
+const SecondFold = (props) => {
     // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
     return (
         <div id="now-playing" style={{
@@ -76,7 +76,7 @@ const SecondFold = () => {
                     </small>
                 </h1>
             </Container>
-            <NowPlaying />
+            <NowPlaying handleShow={props.handleShow}  />
         </div>
     );
 }

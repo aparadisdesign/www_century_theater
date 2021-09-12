@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import YouTube from 'react-youtube';
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import SocialLink from "../Footer/SocialLink/SocialLink";
+import {Button, Col, Container, Row} from "react-bootstrap";
+
 
 const styles = {
     display: 'flex',
@@ -17,7 +17,7 @@ const opts = {
     },
 };
 
-const MovieList = () => {
+const MovieList = (props) => {
     let movies = [
         {
             title: "Paw Patrol: The Movie",
@@ -49,18 +49,18 @@ const MovieList = () => {
         <Col sm={12} md={6}>
             <div style={styles}>
                 <YouTube videoId={movie.youtube_id} opts={opts} />
-                <Button variant="outline-light" >More Details</Button>
+                <Button variant="outline-light" onClick={props.handleShow}>More Details</Button>
             </div>
         </Col>
     );
     return listItems
 }
 
-const NowPlaying = () => {
+const NowPlaying = (props) => {
     return (
         <Container>
             <Row>
-                <MovieList/>
+                <MovieList handleShow={props.handleShow} />
             </Row>
         </Container>
     );
