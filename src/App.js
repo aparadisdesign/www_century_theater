@@ -60,6 +60,7 @@ function App() {
                     handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
                     handleAudienceScore={handleAudienceScore}
                 />
+
             </div>
             <Footer/>
             <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime}
