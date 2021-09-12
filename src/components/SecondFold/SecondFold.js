@@ -1,5 +1,5 @@
 import React, {} from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import NowPlaying from "./NowPlaying";
 
 const firstLetterStyles = {
@@ -17,7 +17,7 @@ const headerStyle = {
     fontStyle: `normal`
 }
 
-const SecondFold = () => {
+const SecondFold = (props) => {
     // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
     return (
         <div id="now-playing" style={{
@@ -30,7 +30,7 @@ const SecondFold = () => {
         }}>
             <Container>
                 <h1 style={headerStyle}>
-                    <small style={{marginBottom:`10px`, display: `flex`, flexDirection: `row`}}>
+                    <small style={{marginBottom: `10px`, display: `flex`, flexDirection: `row`}}>
                         <span style={{
                             marginRight: `5px`,
                             marginTop: `3vh`,
@@ -76,19 +76,9 @@ const SecondFold = () => {
                     </small>
                 </h1>
             </Container>
-            <Container>
-                <Row>
-                    <Col sm={12} md={6}>
-                        <NowPlaying videoId="LRMTr2VZcr8" />
-                    </Col>
-                    <Col sm={12} md={6}>
-                        <NowPlaying videoId="8YjFbMbfXaQ" />
-                    </Col>
-                </Row>
-            </Container>
+            <NowPlaying handleShow={props.handleShow} setModalTitle={props.setModalTitle}  setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer} handlePoster={props.handlePoster} handleTomatoScore={props.handleTomatoScore} handleTomatoLink={props.handleTomatoLink} handleAudienceScore={props.handleAudienceScore} />
         </div>
     );
 }
-
 
 export default SecondFold;

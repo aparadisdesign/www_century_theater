@@ -1,9 +1,11 @@
 import React, {  } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import {library} from "@fortawesome/fontawesome-svg-core";
 
 library.add(fab)
+library.add(fas)
 
 const iconStyle = {
     padding: `0 15px`,
