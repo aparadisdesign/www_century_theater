@@ -17,7 +17,7 @@ const MainModal = (props) => {
                 centered
             >
                 <Modal.Header>
-                    <Modal.Title>{props.title}</Modal.Title>
+                    <Modal.Title>{ props.movie ? "Move Details": props.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     { props.movie ?
@@ -38,11 +38,11 @@ const MainModal = (props) => {
                                         <li>Director: {props.director}</li>
                                         <li>Producer: {props.producer}</li>
                                         <li>
-                                            Rotten Tomatoes: <SocialLink link={props.rotten_link}
+                                            Rotten Tomatoes: <SocialLink link={props.tomatoLink}
                                                                          icon={['fas', 'external-link-alt']}/>
                                             <ul>
-                                                <li>Tomatometer: {props.tomatometer}</li>
-                                                <li>Audience Score: {props.audience_score}</li>
+                                                <li>Tomatometer: {props.tomatoScore}</li>
+                                                <li>Audience Score: {props.audienceScore}</li>
                                             </ul>
                                         </li>
                                     </ul>

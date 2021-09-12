@@ -76,7 +76,7 @@ const SecondFold = (props) => {
                     </small>
                 </h1>
             </Container>
-            <NowPlaying handleShow={props.handleShow} setModalTitle={props.setModalTitle}  setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer}/>
+            <NowPlaying handleShow={props.handleShow} setModalTitle={props.setModalTitle}  setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer} handlePoster={props.handlePoster} handleTomatoScore={props.handleTomatoScore} handleTomatoLink={props.handleTomatoLink} handleAudienceScore={props.handleAudienceScore} />
         </div>
     );
 }

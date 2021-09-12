@@ -1,7 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import SocialLink from "../Footer/SocialLink/SocialLink";
+import {Button, Col, Container, Row} from "react-bootstrap";
 
 
 const styles = {
@@ -53,12 +52,16 @@ const MovieList = (props) => {
                 <YouTube videoId={movie.youtube_id} opts={opts}/>
                 <Button variant="outline-light" onClick={() => {
                     props.handleShow();
-                    props.setModalTitle("Movie Details")
+                    props.setModalTitle(movie.title)
                     props.setIsMovie(true)
                     props.handleRating(movie.rating)
                     props.handleRunningTime(movie.running_time)
                     props.handleDirector(movie.director)
                     props.handleProducer(movie.producer)
+                    props.handlePoster(movie.poster)
+                    props.handleAudienceScore(movie.audience_score)
+                    props.handleTomatoScore(movie.tomatometer)
+                    props.handleTomatoLink(movie.rotten_link)
                 }}>More Details</Button>
             </div>
         </Col>
@@ -70,7 +73,7 @@ const NowPlaying = (props) => {
     return (
         <Container>
             <Row>
-                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer}/>
+                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer} handlePoster={props.handlePoster} handleTomatoScore={props.handleTomatoScore} handleTomatoLink={props.handleTomatoLink} handleAudienceScore={props.handleAudienceScore} />
             </Row>
         </Container>
     );

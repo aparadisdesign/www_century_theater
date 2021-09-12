@@ -29,15 +29,23 @@ function App() {
     const [runningTime, setRunningTime] = useState(null)
     const [director, setDirector] = useState(null)
     const [producer, setProducer] = useState(null)
+    const [poster, setPoster] = useState(null)
+    const [tomatoScore, setTomatoScore] = useState(null)
+    const [tomatoLink, setTomatoLink] = useState(null)
+    const [audienceScore, setAudienceScore] = useState(null)
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true)
     const handleRating = (rating) => setRating(rating)
     const handleRunningTime = (runningTime) => setRunningTime(runningTime)
     const handleDirector = (director) => setDirector(director)
+    const handlePoster = (poster) => setPoster(poster)
     const handleProducer = (producer) => setProducer(producer)
     const setModalTitle = (title) => setTitle(title)
     const setIsMovie = (isMovie) => setMovie(isMovie)
+    const handleTomatoScore = (tomatoScore) => setTomatoScore(tomatoScore)
+    const handleTomatoLink = (tomatoLink) => setTomatoLink(tomatoLink)
+    const handleAudienceScore = (audienceScore) => setAudienceScore(audienceScore)
 
 
     return (
@@ -48,11 +56,12 @@ function App() {
                 <SecondFold
                     handleShow={handleShow} setModalTitle={setModalTitle} setIsMovie={setIsMovie} director={director}
                     producer={producer} handleRating={handleRating} handleRunningTime={handleRunningTime}
-                    handleDirector={handleDirector} handleProducer={handleProducer}
+                    handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
+                    handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink} handleAudienceScore={handleAudienceScore}
                 />
             </div>
             <Footer/>
-            <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime} director={director} producer={producer}
+            <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime} director={director} producer={producer} poster={poster} audienceScore={audienceScore} tomatoLink={tomatoLink} tomatoScore={tomatoScore}
                        handleClose={handleClose}
                        handleShow={handleShow}/>
         </div>
