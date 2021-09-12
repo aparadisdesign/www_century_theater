@@ -45,11 +45,12 @@ const MovieList = (props) => {
         }
     ]
 
+
     const listItems = movies.map((movie) =>
         <Col sm={12} md={6}>
             <div style={styles}>
                 <YouTube videoId={movie.youtube_id} opts={opts} />
-                <Button variant="outline-light" onClick={props.handleShow}>More Details</Button>
+                <Button variant="outline-light" onClick={() => { props.handleShow(); props.setModalTitle("Movie Details") }}>More Details</Button>
             </div>
         </Col>
     );
@@ -60,7 +61,7 @@ const NowPlaying = (props) => {
     return (
         <Container>
             <Row>
-                <MovieList handleShow={props.handleShow} />
+                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} />
             </Row>
         </Container>
     );

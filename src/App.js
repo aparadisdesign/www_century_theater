@@ -18,13 +18,14 @@ function App() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true)
+    const setModalTitle = (title) => setTitle(title)
 
   return (
     <div className="topLevelDiv">
         <MainNavigation />
         <div className="mainContainer" style={style}>
             <FirstFold />
-            <SecondFold handleShow={handleShow}  />
+            <SecondFold handleShow={handleShow} setModalTitle={setModalTitle}   />
         </div>
         <Footer />
         <MainModal show={show} title={title} body={body} handleClose={handleClose} handleShow={handleShow} />

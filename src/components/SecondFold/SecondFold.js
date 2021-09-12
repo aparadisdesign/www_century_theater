@@ -76,7 +76,7 @@ const SecondFold = (props) => {
                     </small>
                 </h1>
             </Container>
-            <NowPlaying handleShow={props.handleShow}  />
+            <NowPlaying handleShow={props.handleShow} setModalTitle={props.setModalTitle}  />
         </div>
     );
 }
