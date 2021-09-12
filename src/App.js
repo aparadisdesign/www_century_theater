@@ -6,11 +6,14 @@ import FirstFold from "./components/FirstFold/FirstFold";
 import SecondFold from "./components/SecondFold/SecondFold";
 import MainModal from "./components/MainModal/MainModal";
 
+const style = { backgroundColor: `rgba(25, 25, 25, .7)`, backgroundImage: `url(${background})`, backgroundPosition:`center center`, backgroundSize: `cover`, backgroundBlendMode: `overlay`, minHeight:`100vh`, marginBottom: `60px`, }
+
+
 function App() {
   return (
     <div className="topLevelDiv">
         <MainNavigation />
-        <div className="mainContainer" style={{ backgroundColor: `rgba(25, 25, 25, .7)`, backgroundImage: `url(${background})`, backgroundPosition:`center center`, backgroundSize: `cover`, backgroundBlendMode: `overlay`, minHeight:`100vh`, marginBottom: `60px`, }}>
+        <div className="mainContainer" style={style}>
             <FirstFold />
             <SecondFold />
         </div>

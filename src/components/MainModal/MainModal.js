@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Button, Modal} from "react-bootstrap";
 import ReactHtmlParser from 'react-html-parser';
 
-
 const MainModal = () => {
 
     let modal_data = {
@@ -17,10 +16,6 @@ const MainModal = () => {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch static backdrop modal
-            </Button>
-
             <Modal
                 show={show}
                 onHide={handleClose}
