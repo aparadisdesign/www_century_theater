@@ -1,6 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Card, Col, Container, Row} from "react-bootstrap";
+import SocialLink from "../Footer/SocialLink/SocialLink";
 
 
 const styles = {
@@ -49,8 +50,16 @@ const MovieList = (props) => {
     const listItems = movies.map((movie) =>
         <Col sm={12} md={6}>
             <div style={styles}>
-                <YouTube videoId={movie.youtube_id} opts={opts} />
-                <Button variant="outline-light" onClick={() => { props.handleShow(); props.setModalTitle("Movie Details") }}>More Details</Button>
+                <YouTube videoId={movie.youtube_id} opts={opts}/>
+                <Button variant="outline-light" onClick={() => {
+                    props.handleShow();
+                    props.setModalTitle("Movie Details")
+                    props.setIsMovie(true)
+                    props.handleRating(movie.rating)
+                    props.handleRunningTime(movie.running_time)
+                    props.handleDirector(movie.director)
+                    props.handleProducer(movie.producer)
+                }}>More Details</Button>
             </div>
         </Col>
     );
@@ -61,7 +70,7 @@ const NowPlaying = (props) => {
     return (
         <Container>
             <Row>
-                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} />
+                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer}/>
             </Row>
         </Container>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
-import {Button, Modal} from "react-bootstrap";
+import {Button, Card, Modal} from "react-bootstrap";
 import ReactHtmlParser from 'react-html-parser';
+import SocialLink from "../Footer/SocialLink/SocialLink";
 
 
 const MainModal = (props) => {
@@ -19,7 +20,37 @@ const MainModal = (props) => {
                     <Modal.Title>{props.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    { ReactHtmlParser (props.body) }
+                    { props.movie ?
+                        <Card style={{width: '100%'}}>
+                            <Card.Img variant="top" style={{
+                                height: `auto`,
+                                width: `auto`,
+                                maxHeight: `300px`,
+                                maxWidth: `200px`,
+                                margin: `10px auto`
+                            }} src={props.poster}/>
+                            <Card.Body>
+                                <Card.Title>{props.title}</Card.Title>
+                                <Card.Text>
+                                    <ul>
+                                        <li>Rating: {props.rating}</li>
+                                        <li>Running Time: {props.runningTime}</li>
+                                        <li>Director: {props.director}</li>
+                                        <li>Producer: {props.producer}</li>
+                                        <li>
+                                            Rotten Tomatoes: <SocialLink link={props.rotten_link}
+                                                                         icon={['fas', 'external-link-alt']}/>
+                                            <ul>
+                                                <li>Tomatometer: {props.tomatometer}</li>
+                                                <li>Audience Score: {props.audience_score}</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card> :
+                     ReactHtmlParser (props.body)
+                    }
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={props.handleClose}>
