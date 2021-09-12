@@ -73,7 +73,12 @@ const NowPlaying = (props) => {
     return (
         <Container>
             <Row>
-                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle} setIsMovie={props.setIsMovie} handleRating={props.handleRating} handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector} handleProducer={props.handleProducer} handlePoster={props.handlePoster} handleTomatoScore={props.handleTomatoScore} handleTomatoLink={props.handleTomatoLink} handleAudienceScore={props.handleAudienceScore} />
+                <MovieList handleShow={props.handleShow} setModalTitle={props.setModalTitle}
+                           setIsMovie={props.setIsMovie} handleRating={props.handleRating}
+                           handleRunningTime={props.handleRunningTime} handleDirector={props.handleDirector}
+                           handleProducer={props.handleProducer} handlePoster={props.handlePoster}
+                           handleTomatoScore={props.handleTomatoScore} handleTomatoLink={props.handleTomatoLink}
+                           handleAudienceScore={props.handleAudienceScore}/>
             </Row>
         </Container>
     );

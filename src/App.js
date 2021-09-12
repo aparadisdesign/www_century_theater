@@ -57,11 +57,14 @@ function App() {
                     handleShow={handleShow} setModalTitle={setModalTitle} setIsMovie={setIsMovie} director={director}
                     producer={producer} handleRating={handleRating} handleRunningTime={handleRunningTime}
                     handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
-                    handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink} handleAudienceScore={handleAudienceScore}
+                    handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
+                    handleAudienceScore={handleAudienceScore}
                 />
             </div>
             <Footer/>
-            <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime} director={director} producer={producer} poster={poster} audienceScore={audienceScore} tomatoLink={tomatoLink} tomatoScore={tomatoScore}
+            <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime}
+                       director={director} producer={producer} poster={poster} audienceScore={audienceScore}
+                       tomatoLink={tomatoLink} tomatoScore={tomatoScore}
                        handleClose={handleClose}
                        handleShow={handleShow}/>
         </div>

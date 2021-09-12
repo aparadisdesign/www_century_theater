@@ -17,10 +17,10 @@ const MainModal = (props) => {
                 centered
             >
                 <Modal.Header>
-                    <Modal.Title>{ props.movie ? "Move Details": props.title}</Modal.Title>
+                    <Modal.Title>{props.movie ? "Move Details" : props.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    { props.movie ?
+                    {props.movie ?
                         <Card style={{width: '100%'}}>
                             <Card.Img variant="top" style={{
                                 height: `auto`,
@@ -49,7 +49,7 @@ const MainModal = (props) => {
                                 </Card.Text>
                             </Card.Body>
                         </Card> :
-                     ReactHtmlParser (props.body)
+                        ReactHtmlParser(props.body)
                     }
                 </Modal.Body>
                 <Modal.Footer>
