@@ -78,10 +78,10 @@ const SecondFold = () => {
             </Container>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <NowPlaying videoId="LRMTr2VZcr8" />
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <NowPlaying videoId="8YjFbMbfXaQ" />
                     </Col>
                 </Row>
