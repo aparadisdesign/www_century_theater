@@ -42,7 +42,7 @@ const ThirdFold = (props) => {
                             width: `auto`,
                             flexGrow: `4`
                         }}/>
-                        <span style={{fontSize: `5vh`}}>@thecenturytheater</span>
+                        <span style={{fontSize: `5vh`}}>Instagram</span>
                         <span style={{
                             marginLeft: `5px`,
                             marginTop: `3vh`,
@@ -79,7 +79,7 @@ const ThirdFold = (props) => {
                 </h1>
             </Container>
 
-            <InstagramFeed token="IGQVJYS19ScExkUUg2dkM4cDF2c0ZAkb2RqbU5xUjlSNVZAsVmFwTkZAzVzN1a2EtMXFIUXNRV0xBbDVKRlQwbjVaejFObDZA0MmctZAlBoTnhPUWRrT1gydHpZAblZAnWTJJMGQ2clFxMXgyclJhXzVNNmJ6ZAAZDZD"  counter="12"/>
+            <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
         </div>
     );
 }
