@@ -45,6 +45,9 @@ jobs:
         run: |
           touch .env
           echo REACT_APP_INSTAGRAM_TOKEN=${{ secrets.REACT_APP_INSTAGRAM_TOKEN }} >> .env
+          echo REACT_APP_PAGE_ID=${{ secrets.REACT_APP_PAGE_ID }} >> .env
+          echo REACT_APP_ATTRIBUTION=${{ secrets.REACT_APP_ATTRIBUTION }} >> .env
+
 
       # Build an optimized production build
       - name: Production Build
