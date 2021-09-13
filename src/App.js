@@ -7,6 +7,7 @@ import SecondFold from "./components/SecondFold/SecondFold";
 import MainModal from "./components/MainModal/MainModal";
 import React, {useState} from "react";
 import ThirdFold from "./components/ThirdFold/ThirdFold";
+import FourthFold from "./components/FourthFold/FourthFold";
 
 
 const style = {
@@ -62,6 +63,7 @@ function App() {
                     handleAudienceScore={handleAudienceScore}
                 />
                 <ThirdFold />
+                <FourthFold />
             </div>
             <Footer/>
             <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime}

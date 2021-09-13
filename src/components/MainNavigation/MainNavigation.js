@@ -13,6 +13,7 @@ const MainNavigation = () => {
                         {/*<Nav.Link href="#home">Home</Nav.Link>*/}
                         {/*<Nav.Link href="#features">Features</Nav.Link>*/}
                         <Nav.Link href="#now-playing">Now Playing</Nav.Link>
+                        <Nav.Link href="#coming-soon">Coming Soon</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
