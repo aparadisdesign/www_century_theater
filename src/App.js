@@ -8,7 +8,7 @@ import MainModal from "./components/MainModal/MainModal";
 import React, {useState} from "react";
 import ThirdFold from "./components/ThirdFold/ThirdFold";
 import FourthFold from "./components/FourthFold/FourthFold";
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 const style = {
     backgroundColor: `rgba(25, 25, 25, .7)`,
@@ -66,11 +66,7 @@ function App() {
                 <FourthFold />
             </div>
             <Footer/>
-            <MessengerCustomerChat
-                pageId={process.env.REACT_APP_PAGE_ID}
-                appId={process.env.REACT_APP_ATTRIBUTION}
-                // htmlRef={}
-            />
+
 
             <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime}
                        director={director} producer={producer} poster={poster} audienceScore={audienceScore}
