@@ -2,6 +2,7 @@ import React, {} from 'react';
 import 'react-ig-feed/dist/index.css'
 import {Col, Container, Row} from "react-bootstrap";
 import YouTube from "react-youtube";
+import ComingSoonTeaser from "./ComingSoonTeaser";
 
 const firstLetterStyles = {
     fontSize: `15vh`,
@@ -111,31 +112,12 @@ const FourthFold = (props) => {
             </Container>
             <Container>
                 <Row>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                         <h4 style={dateStyle}>September 17th</h4>
-                        <h5 style={statusStyle} >Confirmed</h5>
-                         <YouTube videoId="3u9gLvLBtBQ" opts={opts} />
-                    </Col>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                        <h4 style={dateStyle}>October 1st</h4><h5 style={statusStyle}>Pending</h5>
-                        <YouTube videoId="rrwBnlYOp4g" opts={opts} />
-                    </Col>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                        <h4 style={dateStyle}>October 8th</h4><h5 style={statusStyle}>Pending</h5>
-                        <YouTube videoId="N_gD9-Oa0fg" opts={opts} />
-                    </Col>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                        <h4 style={dateStyle}>October 15th</h4><h5 style={statusStyle}>Pending</h5>
-                        <YouTube videoId="hL6R3HmQfPc" opts={opts} />
-                    </Col>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                        <h4 style={dateStyle}>October 22nd</h4><h5 style={statusStyle}>Pending</h5>
-                        <YouTube videoId="8I8nMtzN05s" opts={opts} />
-                    </Col>
-                    <Col lg={4} style={{position: `relative`, marginBottom: `25px`}}>
-                        <h4 style={dateStyle}>October 29th</h4><h5 style={statusStyle}>Pending</h5>
-                        <YouTube videoId="4plqh6obZW4" opts={opts} />
-                    </Col>
+                    <ComingSoonTeaser videoId="3u9gLvLBtBQ" />
+                    <ComingSoonTeaser videoId="rrwBnlYOp4g" />
+                    <ComingSoonTeaser videoId="N_gD9-Oa0fg" />
+                    <ComingSoonTeaser videoId="hL6R3HmQfPc" />
+                    <ComingSoonTeaser videoId="8I8nMtzN05s" />
+                    <ComingSoonTeaser videoId="4plqh6obZW4" />
                 </Row>
             </Container>
         </div>
