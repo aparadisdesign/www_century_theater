@@ -40,6 +40,12 @@ jobs:
         run: |
           yarn install
 
+      # Build ENV file
+      - name: Create env file
+        run: |
+          touch .env
+          echo REACT_APP_INSTAGRAM_TOKEN=${{ secrets.REACT_APP_INSTAGRAM_TOKEN }} >> .env
+
       # Build an optimized production build
       - name: Production Build
         run: |
