@@ -1,13 +1,14 @@
 import MainNavigation from "./components/MainNavigation/MainNavigation";
 import Footer from "./components/Footer/Footer";
 import './App.css';
-import background from "./components/FirstFold/img/background-img.png";
-import FirstFold from "./components/FirstFold/FirstFold";
-import SecondFold from "./components/SecondFold/SecondFold";
+import background from "./img/background-img.png";
 import MainModal from "./components/MainModal/MainModal";
 import React, {useState} from "react";
-import ThirdFold from "./components/ThirdFold/ThirdFold";
-import FourthFold from "./components/FourthFold/FourthFold";
+import HeaderSection from "./components/HeaderSection";
+import {Container} from "react-bootstrap";
+import NowPlaying from "./components/NowPlaying";
+import InstagramFeed from "react-ig-feed";
+import ComingSoonContainer from "./components/ComingSoonContainer";
 
 
 const style = {
@@ -54,16 +55,69 @@ function App() {
         <div className="topLevelDiv">
             <MainNavigation/>
             <div className="mainContainer" style={style}>
-                <FirstFold/>
-                <SecondFold
-                    handleShow={handleShow} setModalTitle={setModalTitle} setIsMovie={setIsMovie} director={director}
-                    producer={producer} handleRating={handleRating} handleRunningTime={handleRunningTime}
-                    handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
-                    handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
-                    handleAudienceScore={handleAudienceScore}
-                />
-                <ThirdFold />
-                <FourthFold />
+
+
+                <Container style={{
+                    minHeight: `100vh`,
+                    padding: `80px 15px`,
+                    display: `flex`,
+                    justifyContent: `right`,
+                    alignItems: `center`
+                }}>
+                    <HeaderSection firstFold="True" />
+                </Container>
+
+                <div id="now-playing" style={{
+                    minHeight: `100vh`,
+                    padding: `80px 15px`,
+                    display: `flex`,
+                    flexDirection: `column`,
+                    justifyContent: `start`,
+                    alignItems: `start`
+                }}>
+                    <Container>
+                        <HeaderSection title="Now Playing" />
+                    </Container>
+                    <NowPlaying handleShow={handleShow} setModalTitle={setModalTitle} setIsMovie={setIsMovie} director={director}
+                                producer={producer} handleRating={handleRating} handleRunningTime={handleRunningTime}
+                                handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
+                                handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
+                                handleAudienceScore={handleAudienceScore} />
+                </div>
+
+                <div id="insta-feed-century" style={{
+                    minHeight: `100vh`,
+                    padding: `80px 15px`,
+                    display: `flex`,
+                    flexDirection: `column`,
+                    justifyContent: `start`,
+                    alignItems: `start`,
+                    backgroundColor: `#212529`
+                }}>
+                    <Container>
+                        <HeaderSection title="Instagram" />
+                    </Container>
+
+                    <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
+                </div>
+
+
+                <div id="coming-soon" style={{
+                    minHeight: `100vh`,
+                    padding: `80px 15px`,
+                    display: `flex`,
+                    flexDirection: `column`,
+                    justifyContent: `start`,
+                    alignItems: `start`,
+                }}>
+                    <Container>
+                        <HeaderSection title="Coming Soon" />
+                    </Container>
+                    <ComingSoonContainer />
+                </div>
+
+
+
             </div>
             <Footer/>
 
