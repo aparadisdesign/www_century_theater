@@ -5,10 +5,22 @@ import background from "./img/background-img.png";
 import MainModal from "./components/MainModal/MainModal";
 import React, {useState} from "react";
 import HeaderSection from "./components/HeaderSection";
-import {Container} from "react-bootstrap";
+import {Button, Container} from "react-bootstrap";
 import NowPlaying from "./components/NowPlaying";
 import InstagramFeed from "react-ig-feed";
 import ComingSoonContainer from "./components/ComingSoonContainer";
+import SiteMenu from "./components/SiteMenu";
+import { scroller } from "react-scroll";
+
+// excluded React component syntax...
+
+const scrollToSection = () => {
+    scroller.scrollTo("comingSoon", {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+    });
+};
 
 
 const style = {
@@ -54,9 +66,8 @@ function App() {
     return (
         <div className="topLevelDiv">
             <MainNavigation/>
+            <SiteMenu />
             <div className="mainContainer" style={style}>
-
-
                 <Container style={{
                     minHeight: `100vh`,
                     padding: `80px 15px`,
@@ -66,7 +77,6 @@ function App() {
                 }}>
                     <HeaderSection firstFold="True" />
                 </Container>
-
                 <div id="now-playing" style={{
                     minHeight: `100vh`,
                     padding: `80px 15px`,
@@ -83,8 +93,8 @@ function App() {
                                 handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
                                 handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
                                 handleAudienceScore={handleAudienceScore} />
+                    <Button style={{ margin:"0 auto"}} variant="outline-light" onClick={scrollToSection} >View Upcoming Films</Button>
                 </div>
-
                 <div id="insta-feed-century" style={{
                     minHeight: `100vh`,
                     padding: `80px 15px`,
@@ -97,11 +107,8 @@ function App() {
                     <Container>
                         <HeaderSection title="Instagram" />
                     </Container>
-
                     <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
                 </div>
-
-
                 <div id="coming-soon" style={{
                     minHeight: `100vh`,
                     padding: `80px 15px`,
@@ -110,18 +117,13 @@ function App() {
                     justifyContent: `start`,
                     alignItems: `start`,
                 }}>
-                    <Container>
+                    <Container className="comingSoon">
                         <HeaderSection title="Coming Soon" />
                     </Container>
                     <ComingSoonContainer />
                 </div>
-
-
-
             </div>
             <Footer/>
-
-
             <MainModal show={show} title={title} body={body} movie={movie} rating={rating} runningTime={runningTime}
                        director={director} producer={producer} poster={poster} audienceScore={audienceScore}
                        tomatoLink={tomatoLink} tomatoScore={tomatoScore}
