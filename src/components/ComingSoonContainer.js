@@ -5,7 +5,7 @@ import {Container, Row} from "react-bootstrap";
 import ComingSoonTeaser from "./ComingSoonTeaser";
 
 
-const ComingSoonContainer = (props) => {
+const ComingSoonContainer = () => {
     // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
     return (
         <Container>

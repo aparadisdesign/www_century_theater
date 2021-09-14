@@ -1,34 +1,39 @@
 import React, {} from 'react';
 import 'react-ig-feed/dist/index.css'
-import {Col, Container, Row} from "react-bootstrap";
+import {Col} from "react-bootstrap";
 import YouTube from "react-youtube";
 
 
-const style = {position: `relative`, marginBottom: `25px`}
+const style = {
+    position: `relative`,
+    marginBottom: `25px`,
+}
 
 const dateStyle = {
     position: `absolute`,
     right: `0`,
-    backgroundColor: `white`,
-    padding: `10px 25px`,
-    border: `solid thin black`,
+    top: `5px`,
+    backgroundColor: `#212529`,
+    color: `whitesmoke`,
+    padding: `5px 10px`,
+    border: `solid thin whitesmoke`,
     fontFamily: `adobe-garamond-pro, serif`,
-    borderBottomLeftRadius: `25px`,
     zIndex: 5,
 }
-
 
 const statusStyle = {
     position: `absolute`,
-    right: `0`,
-    bottom: `0`,
+    left: `0`,
+    bottom: `15px`,
     zIndex: 5,
-    marginRight: `15px`,
+    marginRight: `0`,
+    marginBottom: `15px`,
     padding: `5px 10px`,
     backgroundColor: `#212529`,
-    color: `whitesmoke`
+    color: `whitesmoke`,
+    border: `solid thin whitesmoke`,
+    fontFamily: `adobe-garamond-pro, serif`,
 }
-
 
 const opts = {
     width: '100%',
