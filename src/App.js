@@ -9,6 +9,7 @@ import {Container} from "react-bootstrap";
 import NowPlaying from "./components/NowPlaying";
 import InstagramFeed from "react-ig-feed";
 import ComingSoonContainer from "./components/ComingSoonContainer";
+import SiteMenu from "./components/SiteMenu";
 
 
 const style = {
@@ -54,6 +55,7 @@ function App() {
     return (
         <div className="topLevelDiv">
             <MainNavigation/>
+            <SiteMenu />
             <div className="mainContainer" style={style}>
 
 
@@ -100,6 +102,8 @@ function App() {
 
                     <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
                 </div>
+
+
 
 
                 <div id="coming-soon" style={{

@@ -18,7 +18,7 @@ const headerStyle = {
 const HeaderSection = (props) => {
     // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
     return (
-            <h2 style={headerStyle}>
+            <h2 style={props.styleOverride ? props.styleOverride : headerStyle}>
                 {props.title &&
                     <small style={{marginBottom: `10px`, display: `flex`, flexDirection: `row`}}>
                         <span style={{
@@ -42,7 +42,7 @@ const HeaderSection = (props) => {
                         }}/>
                     </small>
                 }
-                <span style={firstLetterStyles}>T</span>he <span style={firstLetterStyles}>C</span>entury
+                <span style={props.firstOverride ? props.firstOverride : firstLetterStyles}>T</span>he <span style={props.firstOverride ? props.firstOverride : firstLetterStyles}>C</span>entury
                 <br/>
                 <small style={{display: `flex`, flexDirection: `row`}}>
                     <span style={{
