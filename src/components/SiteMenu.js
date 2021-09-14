@@ -76,7 +76,7 @@ const SiteMenu = (props) => {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow} style={menuButton} disabled={true}>
+            <Button variant="primary" onClick={handleShow} style={menuButton} disabled={false}>
                 <FontAwesomeIcon icon={['fas', 'bars']}/>
             </Button>
             <Offcanvas show={show} onHide={handleClose} placement={'end'}>
@@ -88,31 +88,31 @@ const SiteMenu = (props) => {
                                                                             lowerFontOverride="10px"/></Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <h5>Website Links</h5>
+                    <h5>Website Links <small>(COMING SOON)</small></h5>
                     <Nav defaultActiveKey="/home" className="flex-column">
-                        <Nav.Link href="/home">The Century Theater Homepage</Nav.Link>
-                        <Nav.Link eventKey="link-1">About The Century Theater</Nav.Link>
-                        <Nav.Link eventKey="link-2">Memberships</Nav.Link>
-                        <Nav.Link eventKey="link-2">Our Sponsors</Nav.Link>
-                        <Nav.Link eventKey="link-2">Theater Rentals</Nav.Link>
+                        <Nav.Link href="/home" disabled={true}>The Century Theater Homepage</Nav.Link>
+                        <Nav.Link eventKey="link-1" disabled={true}>About The Century Theater</Nav.Link>
+                        <Nav.Link eventKey="link-2" disabled={true}>Memberships</Nav.Link>
+                        <Nav.Link eventKey="link-2" disabled={true}>Our Sponsors</Nav.Link>
+                        <Nav.Link eventKey="link-2" disabled={true}>Theater Rentals</Nav.Link>
                     </Nav>
                     <br />
                     <br />
-                    <h5>Contact Form</h5>
+                    <h5>Contact Form <small>(COMING SOON)</small></h5>
                     <Form style={{marginBottom: `135px`}}>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Your Name</Form.Label>
-                            <Form.Control type="text" placeholder="Bob Wehadababyitsaboy" />
+                            <Form.Control type="text" disabled={true} placeholder="Bob Wehadababyitsaboy" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                             <Form.Label>Your Email Address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
+                            <Form.Control type="email" disabled={true} placeholder="name@example.com" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                             <Form.Label>Your Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
+                            <Form.Control as="textarea" disabled={true} rows={3} />
                         </Form.Group>
-                        <Button>Submit</Button>
+                        <Button variant="dark" type={"submit"} disabled={true}>Submit</Button>
                     </Form>
 
                     <div style={slideOutFooterStyles}>
