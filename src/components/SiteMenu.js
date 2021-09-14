@@ -114,7 +114,6 @@ const SiteMenu = (props) => {
                         </Form.Group>
                         <Button variant="dark" type={"submit"} disabled={true}>Submit</Button>
                     </Form>
-
                     <div style={slideOutFooterStyles}>
                         <h6>The Century Theater</h6>
                         13 Hall St<br/>
