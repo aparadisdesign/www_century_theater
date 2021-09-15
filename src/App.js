@@ -36,7 +36,7 @@ const style = {
 
 function App() {
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
     const [title, setTitle] = useState("Under Development")
     const [body, setBody] = useState("<h4>We just started building this thing!</h4><p>For now the best place to find showtime and information about the century theater is on our Facebook page. <a href=\"https://www.facebook.com/TheCenturyTheater\">Click Here To Visit Us On Facebook</a></p><p>The best way to contact us is by Facebook Messenger.</p>")
     const [movie, setMovie] = useState(false)

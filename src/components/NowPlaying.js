@@ -37,7 +37,7 @@ const MovieList = (props) => {
                 "<tr><th>Friday</th><td>9/10</td><td>3PM, 5PM & 7PM</td><td>9/17</td><td>3PM, 5PM & 7PM</td></tr>" +
                 "<tr><th>Sat</th><td>9/11</td><td>3PM, 5PM & 7PM</td><td>9/18</td><td>3PM, 5PM & 7PM</td></tr>" +
                 "<tr><th>Sun</th><td>9/12</td><td>5PM</td><td>9/19</td><td>5PM</td></tr>" +
-                "</table>"
+                "</table>",
         },
         {
             title: "Shang-Chi and the Legend of the Ten Rings",

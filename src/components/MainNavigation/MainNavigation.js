@@ -12,8 +12,8 @@ const MainNavigation = () => {
                     <Nav className="justify-content-end">
                         {/*<Nav.Link href="#home">Home</Nav.Link>*/}
                         {/*<Nav.Link href="#features">Features</Nav.Link>*/}
-                        <Nav.Link href="#now-playing">Now Playing</Nav.Link>
-                        <Nav.Link href="#coming-soon">Coming Soon</Nav.Link>
+                        <Nav.Link href="#now-playing" className={["d-none", "d-md-block"]}>Now Playing</Nav.Link>
+                        <Nav.Link href="#coming-soon" className={["d-none", "d-md-block"]}>Coming Soon</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
