@@ -54,8 +54,8 @@ const MovieList = (props) => {
                 "<tr><th>Date</th><th colspan='2'>Week 1</th><th colspan='2'>Week 2</th></tr>" +
                 "<tr><th>Wed</th><td>9/8</td><td>7PM</td><td>9/15</td><td>7PM</td></tr>" +
                 "<tr><th>Thur</th><td>9/9</td><td>7PM</td><td>9/16</td><td>7PM</td></tr>" +
-                "<tr><th>Friday</th><td>9/10</td><td>3PM, 5PM & 7PM</td><td colspan='2'>&nbsp;</td></tr>" +
-                "<tr><th>Sat</th><td>9/11</td><td>3PM, 5PM & 7PM</td><td colspan='2'>&nbsp;</td></tr>" +
+                "<tr><th>Friday</th><td>9/10</td><td>3PM & 7PM</td><td colspan='2'>&nbsp;</td></tr>" +
+                "<tr><th>Sat</th><td>9/11</td><td>3PM & 7PM</td><td colspan='2'>&nbsp;</td></tr>" +
                 "<tr><th>Sun</th><td>9/12</td><td>5PM</td><td colspan='2'>&nbsp;</td></tr>" +
                 "</table>"
         }
