@@ -63,7 +63,6 @@ function App() {
     const handleTomatoLink = (tomatoLink) => setTomatoLink(tomatoLink)
     const handleAudienceScore = (audienceScore) => setAudienceScore(audienceScore)
 
-
     return (
         <div className="topLevelDiv">
             <MainNavigation/>

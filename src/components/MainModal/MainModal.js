@@ -6,7 +6,6 @@ import SocialLink from "../Footer/SocialLink/SocialLink";
 
 const MainModal = (props) => {
 
-
     return (
         <>
             <Modal
