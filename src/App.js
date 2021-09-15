@@ -38,7 +38,7 @@ function App() {
 
     const [show, setShow] = useState(true);
     const [title, setTitle] = useState("Under Development")
-    const [body] = useState("<h4>We just started building this thing!</h4><p>For now the best place to find showtime and information about the century theater is on our Facebook page. <a href=\"https://www.facebook.com/TheCenturyTheater\">Click Here To Visit Us On Facebook</a></p><p>The best way to contact us is by Facebook Messenger.</p>")
+    const [body, setBody] = useState("<h4>We just started building this thing!</h4><p>For now the best place to find showtime and information about the century theater is on our Facebook page. <a href=\"https://www.facebook.com/TheCenturyTheater\">Click Here To Visit Us On Facebook</a></p><p>The best way to contact us is by Facebook Messenger.</p>")
     const [movie, setMovie] = useState(false)
     const [rating, setRating] = useState(null)
     const [runningTime, setRunningTime] = useState(null)
@@ -52,6 +52,7 @@ function App() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true)
     const handleRating = (rating) => setRating(rating)
+    const handleBody = (body) => setBody(body)
     const handleRunningTime = (runningTime) => setRunningTime(runningTime)
     const handleDirector = (director) => setDirector(director)
     const handlePoster = (poster) => setPoster(poster)
@@ -92,7 +93,8 @@ function App() {
                                 producer={producer} handleRating={handleRating} handleRunningTime={handleRunningTime}
                                 handleDirector={handleDirector} handleProducer={handleProducer} handlePoster={handlePoster}
                                 handleTomatoScore={handleTomatoScore} handleTomatoLink={handleTomatoLink}
-                                handleAudienceScore={handleAudienceScore} />
+                                handleAudienceScore={handleAudienceScore} setBody={handleBody}
+                    />
                     <Button style={{ margin:"0 auto"}} variant="outline-light" onClick={scrollToSection} >View Upcoming Films</Button>
                 </div>
                 <div id="insta-feed-century" style={{
