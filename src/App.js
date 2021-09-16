@@ -12,8 +12,6 @@ import ComingSoonContainer from "./components/ComingSoonContainer";
 import SiteMenu from "./components/SiteMenu";
 import { scroller } from "react-scroll";
 
-// excluded React component syntax...
-
 const scrollToSection = () => {
     scroller.scrollTo("comingSoon", {
         duration: 800,
@@ -32,6 +30,44 @@ const style = {
     minHeight: `100vh`,
     marginBottom: `60px`,
 }
+
+const firstFoldStyles = {
+    minHeight: `100vh`,
+    padding: `80px 15px`,
+    display: `flex`,
+    justifyContent: `right`,
+    alignItems: `center`
+}
+
+const nowPlayingStyles = {
+    minHeight: `100vh`,
+    padding: `80px 15px`,
+    display: `flex`,
+    flexDirection: `column`,
+    justifyContent: `start`,
+    alignItems: `start`
+}
+
+const instaFeedStyles = {
+    minHeight: `100vh`,
+    padding: `80px 15px`,
+    display: `flex`,
+    flexDirection: `column`,
+    justifyContent: `start`,
+    alignItems: `start`,
+    backgroundColor: `#212529`
+}
+
+const comingSoonDivStyles = {
+    minHeight: `100vh`,
+    padding: `80px 15px`,
+    display: `flex`,
+    flexDirection: `column`,
+    justifyContent: `start`,
+    alignItems: `start`,
+}
+
+
 
 
 function App() {
@@ -68,23 +104,10 @@ function App() {
             <MainNavigation/>
             <SiteMenu />
             <div className="mainContainer" style={style}>
-                <Container style={{
-                    minHeight: `100vh`,
-                    padding: `80px 15px`,
-                    display: `flex`,
-                    justifyContent: `right`,
-                    alignItems: `center`
-                }}>
+                <Container style={firstFoldStyles}>
                     <HeaderSection firstFold="True" />
                 </Container>
-                <div id="now-playing" style={{
-                    minHeight: `100vh`,
-                    padding: `80px 15px`,
-                    display: `flex`,
-                    flexDirection: `column`,
-                    justifyContent: `start`,
-                    alignItems: `start`
-                }}>
+                <div id="now-playing" style={nowPlayingStyles}>
                     <Container>
                         <HeaderSection title="Now Playing" />
                     </Container>
@@ -96,28 +119,13 @@ function App() {
                     />
                     <Button style={{ margin:"0 auto"}} variant="outline-light" onClick={scrollToSection} >View Upcoming Films</Button>
                 </div>
-                <div id="insta-feed-century" style={{
-                    minHeight: `100vh`,
-                    padding: `80px 15px`,
-                    display: `flex`,
-                    flexDirection: `column`,
-                    justifyContent: `start`,
-                    alignItems: `start`,
-                    backgroundColor: `#212529`
-                }}>
+                <div id="insta-feed-century" style={instaFeedStyles}>
                     <Container>
                         <HeaderSection title="Instagram" />
                     </Container>
                     <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
                 </div>
-                <div id="coming-soon" style={{
-                    minHeight: `100vh`,
-                    padding: `80px 15px`,
-                    display: `flex`,
-                    flexDirection: `column`,
-                    justifyContent: `start`,
-                    alignItems: `start`,
-                }}>
+                <div id="coming-soon" style={comingSoonDivStyles}>
                     <Container className="comingSoon">
                         <HeaderSection title="Coming Soon" />
                     </Container>
