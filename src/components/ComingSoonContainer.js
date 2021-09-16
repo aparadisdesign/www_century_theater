@@ -6,11 +6,6 @@ import ComingSoonTeaser from "./ComingSoonTeaser";
 
 let comingSoonMovies = [
     {
-        videoId: "3u9gLvLBtBQ",
-        status: "confirmed",
-        startDate: "September 17th",
-    },
-    {
         videoId: "rrwBnlYOp4g",
         status: "pending",
         startDate: "October 1st",
