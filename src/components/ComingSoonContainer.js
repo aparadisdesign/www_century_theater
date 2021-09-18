@@ -1,5 +1,4 @@
 import React, {} from 'react';
-import 'react-ig-feed/dist/index.css'
 import {Container, Row} from "react-bootstrap";
 
 import ComingSoonTeaser from "./ComingSoonTeaser";

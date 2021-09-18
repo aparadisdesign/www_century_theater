@@ -1,5 +1,4 @@
 import React, {} from 'react';
-import 'react-ig-feed/dist/index.css'
 import {Col} from "react-bootstrap";
 import YouTube from "react-youtube";
 

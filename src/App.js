@@ -7,7 +7,6 @@ import React, {useState} from "react";
 import HeaderSection from "./components/HeaderSection";
 import {Button, Container} from "react-bootstrap";
 import NowPlaying from "./components/NowPlaying";
-import InstagramFeed from "react-ig-feed";
 import ComingSoonContainer from "./components/ComingSoonContainer";
 import SiteMenu from "./components/SiteMenu";
 import { scroller } from "react-scroll";
@@ -48,15 +47,6 @@ const nowPlayingStyles = {
     alignItems: `start`
 }
 
-const instaFeedStyles = {
-    minHeight: `100vh`,
-    padding: `80px 15px`,
-    display: `flex`,
-    flexDirection: `column`,
-    justifyContent: `start`,
-    alignItems: `start`,
-    backgroundColor: `#212529`
-}
 
 const comingSoonDivStyles = {
     minHeight: `100vh`,
@@ -65,6 +55,7 @@ const comingSoonDivStyles = {
     flexDirection: `column`,
     justifyContent: `start`,
     alignItems: `start`,
+    backgroundColor: `#212529`,
 }
 
 
@@ -118,12 +109,6 @@ function App() {
                                 handleAudienceScore={handleAudienceScore} setBody={handleBody}
                     />
                     <Button style={{ margin:"0 auto"}} variant="outline-light" onClick={scrollToSection} >View Upcoming Films</Button>
-                </div>
-                <div id="insta-feed-century" style={instaFeedStyles}>
-                    <Container>
-                        <HeaderSection title="Instagram" />
-                    </Container>
-                    <InstagramFeed token={process.env.REACT_APP_INSTAGRAM_TOKEN}  counter="12"/>
                 </div>
                 <div id="coming-soon" style={comingSoonDivStyles}>
                     <Container className="comingSoon">
