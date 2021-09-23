@@ -11,7 +11,7 @@ let comingSoonMovies = [
     },
     {
         videoId: "rrwBnlYOp4g",
-        status: "pending",
+        status: "Confirmed",
         startDate: "October 1st",
     },
     {
@@ -21,7 +21,7 @@ let comingSoonMovies = [
     },
     {
         videoId: "hL6R3HmQfPc",
-        status: "confirmed",
+        status: "Confirmed",
         startDate: "October 15th",
     },
     {
