@@ -10,7 +10,7 @@ let comingSoonMovies = [
         startDate: "October 1st",
     },
     {
-        videoId: "N_gD9-Oa0fg",
+        videoId: "g_c_Jd-hP-s",
         status: "pending",
         startDate: "October 8th",
     },
@@ -23,11 +23,6 @@ let comingSoonMovies = [
         videoId: "8I8nMtzN05s",
         status: "pending",
         startDate: "October 22nd",
-    },
-    {
-        videoId: "4plqh6obZW4",
-        status: "pending",
-        startDate: "October 29th",
     },
 ]
 
