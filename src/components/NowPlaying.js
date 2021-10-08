@@ -38,21 +38,21 @@ const MovieList = (props) => {
                 "</table>",
         },
         {
-            title: "Hotel Transylvania 3: Summer Vacation",
-            running_time: "1h 37min",
-            rating: "PG",
-            youtube_id: "Ku52zNnft8k",
-            poster: "https://cdn.century.theater/ht3.jpg",
-            director: "",
+            title: "Dear Evan Hansen",
+            running_time: "2h 17m",
+            rating: "PG-13",
+            youtube_id: "g_c_Jd-hP-s",
+            poster: "https://cdn.century.theater/dearevanhansen.jpeg",
+            director: "Stephen Chbosky",
             producer: "",
-            rotten_link: "https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation",
-            tomatometer: "62%",
-            audience_score: "48%",
+            rotten_link: "https://www.rottentomatoes.com/m/dear_evan_hansen",
+            tomatometer: "31%",
+            audience_score: "88%",
             show_times: "<table class='table'>" +
-                "<tr><th>Date</th><th colspan='2'>Week 1</th></tr>" +
-                "<tr><th>Friday</th><td>10/1</td><td>4PM & 7PM</td></tr>" +
-                "<tr><th>Sat</th><td>10/2</td><td>4PM & 7PM</td></tr>" +
-                "<tr><th>Sun</th><td>10/3</td><td>5PM</td></tr>" +
+                "<tr><th>Date</th><th colspan='2'>Week 1</th><th colspan='2'>Week 2</th></tr>" +
+                "<tr><th>Friday</th><td>10/8</td><td>4PM & 7PM</td><td>10/15</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Sat</th><td>10/9</td><td>4PM & 7PM</td><td>10/16</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Sun</th><td>10/10</td><td>5PM</td><td>10/17</td><td>5PM</td></tr>" +
                 "</table>",
         },
     ]
