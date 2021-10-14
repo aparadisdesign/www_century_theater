@@ -20,21 +20,23 @@ const opts = {
 const MovieList = (props) => {
     let movies = [
         {
-            title: "Venom: Let There Be Carnage",
-            running_time: "2h",
-            rating: "PG-13",
-            youtube_id: "rrwBnlYOp4g",
-            poster: "https://cdn.century.theater/venom.jpg",
-            director: "Andy Serkis",
+            title: "Halloween Kills",
+            running_time: "1h 45m",
+            rating: "R",
+            youtube_id: "hL6R3HmQfPc",
+            poster: "https://cdn.century.theater/halloween_kills.jpeg",
+            director: "David Gordon Green",
             producer: "",
-            rotten_link: "https://www.rottentomatoes.com/m/venom_let_there_be_carnage",
-            tomatometer: "59%",
-            audience_score: "86%",
+            rotten_link: "https://www.rottentomatoes.com/m/halloween_kills",
+            tomatometer: "",
+            audience_score: "",
             show_times: "<table class='table'>" +
                 "<tr><th>Date</th><th colspan='2'>Week 1</th><th colspan='2'>Week 2</th></tr>" +
-                "<tr><th>Friday</th><td>10/1</td><td>4PM & 7PM</td><td>10/8</td><td>4PM & 7PM</td></tr>" +
-                "<tr><th>Sat</th><td>10/2</td><td>4PM & 7PM</td><td>10/9</td><td>4PM & 7PM</td></tr>" +
-                "<tr><th>Sun</th><td>10/3</td><td>5PM</td><td>10/10</td><td>5PM</td></tr>" +
+                "<tr><th>Friday</th><td>10/15</td><td>4PM & 7PM</td><td>10/22</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Sat</th><td>10/16</td><td>4PM & 7PM</td><td>10/23</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Sun</th><td>10/17</td><td>5PM</td><td>10/24</td><td>5PM</td></tr>" +
+                "<tr><th colspan='5' style='text-align:center;'>EXTRA SHOWTIME</th></tr>" +
+                "<tr><th colspan='5' style='text-align:center;'>Monday 10/18   5:30PM</th></tr>" +
                 "</table>",
         },
         {
@@ -53,6 +55,8 @@ const MovieList = (props) => {
                 "<tr><th>Friday</th><td>10/8</td><td>4PM & 7PM</td><td>10/15</td><td>4PM & 7PM</td></tr>" +
                 "<tr><th>Sat</th><td>10/9</td><td>4PM & 7PM</td><td>10/16</td><td>4PM & 7PM</td></tr>" +
                 "<tr><th>Sun</th><td>10/10</td><td>5PM</td><td>10/17</td><td>5PM</td></tr>" +
+                "<tr><th colspan='5' style='text-align:center;'>EXTRA SHOWTIME</th></tr>" +
+                "<tr><th colspan='5' style='text-align:center;'>Monday 10/18   5:30PM</th></tr>" +
                 "</table>",
         },
     ]

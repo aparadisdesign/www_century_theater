@@ -5,11 +5,6 @@ import ComingSoonTeaser from "./ComingSoonTeaser";
 
 let comingSoonMovies = [
     {
-        videoId: "hL6R3HmQfPc",
-        status: "Confirmed",
-        startDate: "October 15th",
-    },
-    {
         videoId: "8I8nMtzN05s",
         status: "pending",
         startDate: "October 22nd",
@@ -34,6 +29,11 @@ let comingSoonMovies = [
         status: "pending",
         startDate: "November 19th",
     },
+    {
+        videoId: "CaimKeDcudo",
+        status: "pending",
+        startDate: "November 26th"
+    }
 ]
 
 const ComingSoonContainer = () => {
