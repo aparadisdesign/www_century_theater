@@ -4,29 +4,30 @@ import {Container, Row} from "react-bootstrap";
 import ComingSoonTeaser from "./ComingSoonTeaser";
 
 let comingSoonMovies = [
-    {
-        videoId: "8I8nMtzN05s",
-        status: "pending",
-        startDate: "October 22nd",
-    },
+
     {
         videoId: "tB9WUIv9KH8",
+        status: "confirmed",
+        startDate: "October 29th",
+    },
+    {
+        videoId: "4plqh6obZW4",
         status: "pending",
         startDate: "October 29th",
     },
     {
-        videoId: "x_me3xsvDgk",
+        videoId: "8I8nMtzN05s",
         status: "pending",
         startDate: "November 5th",
     },
     {
-        videoId: "Ja3PPOnJQ2k",
+        videoId: "x_me3xsvDgk",
         status: "pending",
         startDate: "November 12th",
     },
     {
         videoId: "ahZFCF--uRY",
-        status: "pending",
+        status: "confirmed",
         startDate: "November 19th",
     },
     {
