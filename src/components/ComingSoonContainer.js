@@ -6,17 +6,7 @@ import ComingSoonTeaser from "./ComingSoonTeaser";
 let comingSoonMovies = [
     {
         videoId: "8I8nMtzN05s",
-        status: "pending",
-        startDate: "October 22nd",
-    },
-    {
-        videoId: "tB9WUIv9KH8",
-        status: "pending",
-        startDate: "October 29th",
-    },
-    {
-        videoId: "x_me3xsvDgk",
-        status: "pending",
+        status: "confirmed",
         startDate: "November 5th",
     },
     {
@@ -25,14 +15,19 @@ let comingSoonMovies = [
         startDate: "November 12th",
     },
     {
+        videoId: "x_me3xsvDgk",
+        status: "confirmed",
+        startDate: "November 19th",
+    },
+    {
         videoId: "ahZFCF--uRY",
-        status: "pending",
+        status: "confirmed",
         startDate: "November 19th",
     },
     {
         videoId: "CaimKeDcudo",
         status: "pending",
-        startDate: "November 26th"
+        startDate: "December 3rd"
     }
 ]
 
