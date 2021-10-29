@@ -32,7 +32,7 @@ const MovieList = (props) => {
             audience_score: "",
             show_times: "<table class='table'>" +
                 "<tr><th>Date</th><th colspan='2'>Week 1</th><th colspan='2'>Week 2</th></tr>" +
-                "<tr><th>Friday</th><td>10/29</td><td>4PM & 7PM</td><td>11/5</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Friday</th><td>10/29</td><td>3PM & 6PM</td><td>11/5</td><td>4PM & 7PM</td></tr>" +
                 "<tr><th>Sat</th><td>10/30</td><td>4PM & 7PM</td><td>11/6</td><td>4PM & 7PM</td></tr>" +
                 "<tr><th>Sun</th><td>10/31</td><td>5PM</td><td>11/7</td><td>5PM</td></tr>" +
                 "</table>",
@@ -50,7 +50,7 @@ const MovieList = (props) => {
             audience_score: "81%",
             show_times: "<table class='table'>" +
                 "<tr><th>Date</th><th colspan='2'>Week 1</th></tr>" +
-                "<tr><th>Friday</th><td>10/29</td><td>4PM & 7PM</td></tr>" +
+                "<tr><th>Friday</th><td>10/29</td><td>3PM & 6PM</td></tr>" +
                 "<tr><th>Sat</th><td>10/30</td><td>4PM & 7PM</td></tr>" +
                 "<tr><th>Sun</th><td>10/31</td><td>5PM</td></tr>" +
                 "</table>",
