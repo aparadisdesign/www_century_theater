@@ -15,11 +15,6 @@ let comingSoonMovies = [
         startDate: "November 19th",
     },
     {
-        videoId: "CaimKeDcudo",
-        status: "pending",
-        startDate: "December 3rd"
-    },
-    {
         videoId: "EPZu5MA2uqI",
         status: "confirmed",
         startDate: "December 24th"
